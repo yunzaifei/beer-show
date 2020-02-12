@@ -48,10 +48,10 @@
                 index -= 1;
                 if (index < 1) { index = 1; }
             }
+            changeImage();
             document.querySelector('.progress').dataset.content = index + '/' + number;
             document.querySelector('.progress-value').style.width = (index / number * 100).toFixed(0) + '%';
             replayAnimation();
-            changeImage();
             audio.play();
         }, { passive: false });
 
